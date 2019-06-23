@@ -80,6 +80,7 @@ def alphabet_spaghetti(
         
     letter_we_are_trying_to_find = sentence[index]
 
+    print("")
     print("The letter that comes " + str(letters_before) + " letters before the letter that comes " + str(letters_after))
     print("letters after appearance number " + str(nth_appearance) + " of the first letter to occur " + str(letter_appears_this_many_times))
     print("times in the sentence above ("+ letter_that_appears_alphabetised +") is: the letter '" + letter_we_are_trying_to_find + "'")
