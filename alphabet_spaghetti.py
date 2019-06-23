@@ -59,16 +59,19 @@ def alphabet_spaghetti(
     # print(letters)
 
     if nth_appearance <= len(letter_instances):
-        print(letter_instances[nth_appearance - 1])
         letter_index_to_start_from = letter_instances[nth_appearance - 1]
         index = letter_index_to_start_from
 
-    if index + letters_after < len(letter_instances):
+        print("index at 1st if: " + str(index))
+
+    if (index + letters_after) < len(letter_instances):
         index += letters_after
+        print("index at 2nd if: " + str(index))
     
-    if index - letters_before >= 0:
+    if (index - letters_before) >= 0:
         index -= letters_before
-    
+        print("index at 3rd if: " + str(index))
+        
     letter_we_are_trying_to_find = sentence[index]
 
     print("The letter that comes " + str(letters_before) + " letters before the letter that comes " + str(letters_after))
