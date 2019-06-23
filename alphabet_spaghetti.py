@@ -64,7 +64,7 @@ def alphabet_spaghetti(
 
         print("index at 1st if: " + str(index))
 
-    if (index + letters_after) < len(letter_instances):
+    if (index + letters_after) < len(sentence):
         index += letters_after
         print("index at 2nd if: " + str(index))
     
