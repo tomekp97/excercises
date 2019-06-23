@@ -89,4 +89,4 @@ def alphabet_spaghetti(
 
 
 
-alphabet_spaghetti(sentence, 8, 5, 4, 4)
+alphabet_spaghetti(sentence, 3, 7, 3, 7)
