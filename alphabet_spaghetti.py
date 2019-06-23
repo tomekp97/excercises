@@ -63,14 +63,20 @@ def alphabet_spaghetti(
         index = letter_index_to_start_from
 
         print("index at 1st if: " + str(index))
+    else:
+        print("nth_appearance doesn't exist as an index in letter_instances array.")
 
     if (index + letters_after) < len(sentence):
         index += letters_after
         print("index at 2nd if: " + str(index))
+    else:
+        print("letters_after conditional skipped due to index sum being more than maximum array offset.")
     
     if (index - letters_before) >= 0:
         index -= letters_before
         print("index at 3rd if: " + str(index))
+    else:
+        print("letters_before conditional skipped due to index sum being less than minimum array offset.")
         
     letter_we_are_trying_to_find = sentence[index]
 
