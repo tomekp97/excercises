@@ -15,6 +15,20 @@ import string
 sentence = "IP! IP! IP! XIBU B MPWFMZ QVEEJOH! NFSSZ DISJTUNBT BOE B IBQQZ OFX ZFBS UP ZPV BMM!"
 
 def decrypt(sentence, offset):
-    pass
+    alphabet_string = string.ascii_uppercase
+    alphabet = list(alphabet_string)
+    decrypted_sentence = ""
 
-decrypt()
+    iteration = 0
+    for char in sentence[iteration:]:
+        if char in alphabet:
+            original_index = alphabet.index(char)
+            updated_index = original_index + offset
+            char = alphabet[updated_index]
+        
+        decrypted_sentence += str(char)
+        iteration += 1
+
+    print(decrypted_sentence)
+
+decrypt(sentence, -1)
